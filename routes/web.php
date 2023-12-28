@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\CarouselController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
@@ -79,7 +80,7 @@ Route::post('/addProductDB', [ProductController::class, 'addProductDB'])->name('
 // Delete product routes
 Route::post('/deleteProduct', [ProductController::class, 'deleteProduct'])->name('deleteProduct');
 
-
-
+// Image carousel route
+Route::get('/productCatalogWithImageCarousel', [CarouselController::class, 'showCarousels']);
 
 
