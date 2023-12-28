@@ -63,7 +63,7 @@ class ProductController extends Controller
     {
         // Fetch products from the database with pagination
         // You can adjust the number of items per page
-        $products = Product::paginate(3);
+        $products = Product::all();
 
         // Pass the paginated products to the view
         return view('productsCatalog', compact('products'));

@@ -15,7 +15,5 @@
         </div>
 
     </div>
-        <!-- Displays pagination links -->
-        {{ $products->links() }}
 
 @endsection
